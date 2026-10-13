@@ -1,0 +1,5 @@
+simulator
+__pycache__/
+*.pyc
+results/one_run.csv
+.ipynb_checkpoints/
