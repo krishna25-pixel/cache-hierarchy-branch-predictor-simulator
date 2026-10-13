@@ -43,15 +43,6 @@ The included trace is **synthetic** (seed 42), not SPEC CPU or a hardware execut
 
 The suite runs 21 replacement/associativity/predictor combinations on the synthetic trace. See `results/base.csv`, `results/sweep.csv`, and PNG plots. Cache local miss rates can be non-monotonic as configurations alter the stream reaching lower levels. Predictor accuracy depends on the generated branches; it is not a universal accuracy figure.
 
-## NVIDIA relevance
-
-Demonstrates C++ functional architecture modelling, address decomposition, policy trade-offs, trace processing, reproducible Python automation and validation. **It does not demonstrate RTL/SystemVerilog, ARM verification, ASIC design, or cycle-accurate performance estimation.**
-
-## Resume bullets (only after reproducing tests/results)
-
-- Developed a trace-driven **C++17** three-level cache simulator with configurable size, associativity and **LRU/tree-PLRU** replacement; measured per-level miss rates and MPKI.
-- Implemented **bimodal, gshare and tournament** branch predictors with 2-bit saturating counters; automated **21 architecture configurations** using Python and generated comparative plots.
-- Validated cache behavior with directed tests and an independently implemented randomized **LRU reference model**; documented simplifying assumptions and repeatable synthetic workloads.
 
 ## License
 
